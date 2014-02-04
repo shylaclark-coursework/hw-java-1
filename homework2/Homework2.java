@@ -7,7 +7,7 @@
 
 import java.util.Scanner;
 
-class HomeworkTwo {
+public class Homework2 {
 
     public static void main( String[] args ) {
     
@@ -21,7 +21,11 @@ class HomeworkTwo {
         int operation;
 
         // print operations menu ( +, -, *, /, % )
-        System.out.println( "Choose: +, -, *, /, or %" );
+        System.out.println( "Choose: +...1");
+        System.out.println( "        -...2");
+        System.out.println( "        /...3");
+        System.out.println( "        *...4");
+        System.out.println( "     or %...5");
         
         // read into the choice variable the menu choice the user makes
         operation = input.nextInt(); 
@@ -33,27 +37,27 @@ class HomeworkTwo {
         secondNumber = input.nextDouble(); // read second number from user
 
         // use if control structure to check user choice
-        if ( operation == '+' ) {
+        if ( operation == 1 ) {
             // inside body carry out corresponding operation and print result
             System.out.println( "Answer:" + (firstNumber + secondNumber) );
         }
 
-        if ( operation == '-' ) {
+        if ( operation == 2 ) {
             // inside body carry out corresponding operation and print result
             System.out.println( "Answer:" + (firstNumber - secondNumber) );
         }
         
-        if ( operation == '/' ) {
+        if ( operation == 3 ) {
             // inside body carry out corresponding operation and print result
             System.out.println( "Answer:" + (firstNumber / secondNumber) );
         }
 
-        if ( operation == '*' ) {
+        if ( operation == 4 ) {
             // inside body carry out corresponding operation and print result
             System.out.println( "Answer:" + (firstNumber * secondNumber) );
         }
 
-        if ( operation == '%' ) {
+        if ( operation == 5 ) {
             // inside body carry out corresponding operation and print result
             System.out.println( "Answer:" + (firstNumber % secondNumber) );
         }
