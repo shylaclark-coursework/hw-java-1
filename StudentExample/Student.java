@@ -3,11 +3,8 @@ package StudentExample;
 /**
  * Models a student in the UNO Webstar system
  */
-public class Student {
+public class Student extends Associate {
 
-  private int id;
-  private String password;
-  private String name;
   private int creditHours;
   private int qualityPoints; //invariant: qualityPoints <= 4.0 * creditHours && qualityPoints >= 0 
   private double gpa;
@@ -23,22 +20,14 @@ public class Student {
    * 
    */
   public Student(int id, String name, String defaultPassword) {
-    this.id = id;
-    this.name = name;
-    password = defaultPassword;
+    super.id = id;
+    super.name = name;
+    super.password = defaultPassword;
     creditHours = 0;
     qualityPoints = 0;
     gpa = 0.0;
   }
-  
-  public int id() {
-    return id;
-  }
-  
-  public String name() {
-    return name;
-  }
-  
+ 
   public int creditHours() {
     return creditHours;
   }
@@ -50,11 +39,7 @@ public class Student {
   public double gpa() {
     return gpa;
   }
-  
-  public void changeName(String newName) {
-    name = newName;
-  }
-  
+
   /**
    * Update credit hours for this student. This update should occur before 
    * adding quality points.
@@ -80,10 +65,6 @@ public class Student {
     if ((qualityPoints + points) <= 4 * creditHours) {
       qualityPoints = qualityPoints + points;
     }
-  }
-  
-  public void changePassword(String newPassword) {
-    password = newPassword;
   }
   
   /**
