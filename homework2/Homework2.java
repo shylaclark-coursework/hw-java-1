@@ -1,9 +1,9 @@
 /**
-* Shyla Clark
-* CSCI 1583 (Evenie Chao)
-* Homework 2: Calculator
-* Feb 4, 2014
-**/
+ * Shyla Clark
+ * CSCI 1583
+ * Homework 2: General Calculator
+ * Feb 4, 2014
+ **/
 
 import java.util.Scanner;
 
