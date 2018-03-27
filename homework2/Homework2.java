@@ -30,11 +30,13 @@ public class Homework2 {
         // Read the user's menu choice into the choice variable 
         operation = input.nextInt(); 
 
-        System.out.print( "Enter first number: " ); // Prompt
-        firstNumber = input.nextDouble(); // Read first number from user
+        // Read first number from user
+        System.out.print( "Enter first number: " );
+        firstNumber = input.nextDouble();
 
-        System.out.print( "Enter second number: " ); // prompt
-        secondNumber = input.nextDouble(); // read second number from user
+        // Read second number from user
+        System.out.print( "Enter second number: " );
+        secondNumber = input.nextDouble();
 
         // Check user's choice using series of if statements
         if ( operation == 1 ) {
