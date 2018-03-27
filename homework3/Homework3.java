@@ -12,7 +12,6 @@ public class Homework3 {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-		String studentName = "";
 		int menu = 0;
 		int menu2 = 0;
 		
@@ -34,7 +33,7 @@ public class Homework3 {
         double average;
 
 		System.out.println("Enter student name: ");
-      	studentName = input.next();
+        String studentName = input.next();
         
 		if (studentName != null) {
 			System.out.println("Type 1 to enter homework grades, 2 to enter quiz grades, 3 to enter test grades or -1 to quit.");
