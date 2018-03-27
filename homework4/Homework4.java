@@ -42,10 +42,10 @@ public class Homework4 {
 				
 			}
 			else if (choice == 7) {
-				System.out.println( getAverage( tGrades));
+				System.out.println( getAverage(tGrades));
 			}
 			else if (choice == 8) {
-				System.out.println( totalAverage ( hwGrades, qGrades, tGrades ) );
+				System.out.println(totalAverage(hwGrades, qGrades, tGrades));
 			}
 		} while (choice >= 0); // Exit-condition
     }
